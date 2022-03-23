@@ -1,67 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Survey Form</title>
-</head>
+  </head>
 
-<body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">
+  <body>
+    <div class="title">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
         Thank you for taking the time to help us improve the platform
-    </p>
+      </p>
+    </div>
     <form id="survey-form">
-        <div>
-            <label id="name-label">Name</label><br />
-            <input name="name" id="name" type="text" placeholder="Your Name" /><br />
-        </div>
-        <div>
-            <label id="email-label">Email</label><br />
-            <input name="email" id="email" type="email" placeholder="Your Email" required /><br />
-        </div>
-        <div>
-            <label id="number-label">Number</label><br />
-            <input name="Number" id="number" type="number" placeholder="Your Number" required min="10" max="99" /><br />
-        </div>
-        <div>
-            <label id="number-label">Whats your role?</label><br />
-            <select name="role" id="dropdown">
-                <option>select current role</option>
-                <option value="Learner">Learner</option>
-                <option value="new">new to programming</option>
-                <option value="veteran">veteran programmer</option>
-            </select><br />
-        </div>
-        <div>
-            <label id="radio-label"> Whats do you know?</label><br />
-            <input type="radio" id="html" name="radio" value="html" checked />
-            <label id="radio-label"> Html</label><br />
-            <input type="radio" id="css" name="radio" value="css" />
-            <label id="radio-label"> Css</label><br />
-            <input type="radio" id="javascript" name="radio" value="javascript" />
-            <label id="radio-label"> JavaScript </label><br />
-        </div>
-        <div>
-            <label id="radio-label"> Favorite library?</label><br />
-            <input type="checkbox" id="react" name="checkbox" value="react" checked />
-            <label id="checkbox-label"> React</label><br />
-            <input type="checkbox" id="vue" name="checkbox" value="vue" />
-            <label id="checkbox-label"> Vue</label><br />
-            <input type="checkbox" id="angular" name="checkbox" value="angular" />
-            <label id="checkbox-label"> Angular </label><br />
-        </div>
-        <div>
-            <label id="textarea-label">Comments</label><br>
-            <textarea rows="4" cols="50" placeholder="Your Comments"></textarea><br>
-        </div>
-        <input type="submit" id="submit" value="Submit" />
-
+      <div class="form-group">
+        <label id="name-label">Name</label><br />
+        <input
+          name="name"
+          id="name"
+          type="text"
+          placeholder="Your Name"
+        /><br />
+      </div>
+      <div class="form-group">
+        <label id="email-label">Email</label><br />
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Your Email"
+          required
+        /><br />
+      </div>
+      <div class="form-group">
+        <label id="number-label">Number</label><br />
+        <input
+          name="Number"
+          id="number"
+          type="number"
+          placeholder="Your Number"
+          required
+          min="10"
+          max="99"
+        /><br />
+      </div>
+      <div class="form-group">
+        <label id="select-label">Whats your role?</label><br />
+        <select name="role" id="dropdown">
+          <option>select current role</option>
+          <option value="Learner">Learner</option>
+          <option value="new">new to programming</option>
+          <option value="veteran">veteran programmer</option></select
+        ><br />
+      </div>
+      <div class="form-group">
+        <label id="radio-label"> Whats do you know?</label><br />
+        <input type="radio" id="html" name="radio" value="html" checked />
+        <label id="radio-label"> Html</label><br />
+        <input type="radio" id="css" name="radio" value="css" />
+        <label id="radio-label"> Css</label><br />
+        <input type="radio" id="javascript" name="radio" value="javascript" />
+        <label id="radio-label"> JavaScript </label><br />
+      </div>
+      <div class="form-group">
+        <label id="radio-label"> Favorite library?</label><br />
+        <input
+          type="checkbox"
+          id="react"
+          name="checkbox"
+          value="react"
+          checked
+        />
+        <label id="checkbox-label"> React</label><br />
+        <input type="checkbox" id="vue" name="checkbox" value="vue" />
+        <label id="checkbox-label"> Vue</label><br />
+        <input type="checkbox" id="angular" name="checkbox" value="angular" />
+        <label id="checkbox-label"> Angular </label><br />
+      </div>
+      <div class="form-group">
+        <label id="textarea-label">Comments</label><br />
+        <textarea
+          rows="4"
+          cols="50"
+          placeholder="Your Comments"
+          id="textarea"
+        ></textarea
+        ><br />
+      </div>
+      <input type="submit" id="submit" value="Submit" />
     </form>
-
-</body>
-
+  </body>
 </html>
