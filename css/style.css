@@ -15,11 +15,17 @@ p {
 }
 
 form {
-  width: 600px;
+  width: 80%;
   background-color: #fff;
-  padding: 50px;
-  margin: 10px auto;
+  padding: 30px;
+  margin: 0 auto;
   border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  form {
+    width: 600px;
+  }
 }
 
 #name {
